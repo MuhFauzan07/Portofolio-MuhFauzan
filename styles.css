@@ -83,7 +83,7 @@ img { display: block; max-width: 100%; }
 
 .home-view {
   display: grid;
-  min-height: min(740px, calc(100vh - 80px));
+  min-height: calc(100vh - 130px);
   padding: 48px 65px;
   grid-template-columns: 1.05fr 0.95fr;
   align-items: center;
