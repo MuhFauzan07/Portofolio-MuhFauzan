@@ -54,8 +54,8 @@ const projects = {
       "Kegiatan yang disarankan AI.",
       "Jurnal-jurnal untuk membaca."
     ],
-    role: "UI/UX",
-    tools: "Figma · Canva",
+    role: "Frontend · UI/UX",
+    tools: "Figma · Canva · VS Code",
     language: "Kotlin",
     links: [
       { label: "Link Github", href: "https://github.com/MuhFauzan07/APPBANTAL.git" },
@@ -123,7 +123,7 @@ function renderProject(projectId) {
   const description = project.description ? `<p class="detail-description">${project.description}</p>` : "";
 
   detailContent.innerHTML = `
-    <a class="back-link" href="#projects"><span aria-hidden="true">←</span> Projects</a>
+    <a class="back-link" href="#projects" aria-label="Kembali ke Projects"><img src="assets/back-arrow.png" alt=""> <span>Projects</span></a>
     <div class="project-detail-layout">
       <div class="detail-copy">
         <p class="detail-category">${project.category}</p>
