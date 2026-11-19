@@ -58,7 +58,7 @@ img { display: block; max-width: 100%; }
 .primary-navigation { display: flex; height: 100%; align-items: center; gap: clamp(18px, 3vw, 36px); }
 .primary-navigation a {
   display: flex;
-  height: 100%;
+  height: calc(100% - 10px);
   padding: 0 12px;
   align-items: center;
   border-radius: 999px;
@@ -102,6 +102,7 @@ img { display: block; max-width: 100%; }
   font-weight: 700;
   letter-spacing: 0.04em;
 }
+.hero-copy .eyebrow { font-size: 17px; }
 h1, h2, p { margin-top: 0; }
 .home-view h1 {
   margin-bottom: 12px;
@@ -281,10 +282,9 @@ h1, h2, p { margin-top: 0; }
 .contact-card:hover { outline: 1px solid var(--accent); }
 
 .project-detail-view { padding: 28px 34px 36px; }
-.back-link { display: inline-flex; margin-bottom: 20px; align-items: center; gap: 8px; color: var(--muted); font-size: 13px; }
-.back-link:hover { color: var(--accent); }
-.back-link img { width: 22px; height: 22px; object-fit: contain; filter: brightness(0) invert(1); }
-.back-link span { color: var(--accent); }
+.back-link { display: inline-flex; width: 44px; height: 44px; margin-bottom: 20px; align-items: center; justify-content: center; border-radius: 50%; }
+.back-link:hover { background: rgba(57, 214, 229, 0.13); }
+.back-link img { width: 34px; height: 34px; object-fit: contain; filter: brightness(0) invert(1); }
 .project-detail-layout { display: grid; grid-template-columns: 1fr 1fr; align-items: start; gap: 28px; }
 .detail-copy { min-width: 0; }
 .detail-category { margin: 0 0 3px; color: var(--accent); font-size: 21px; font-weight: 700; }
@@ -328,7 +328,7 @@ h1, h2, p { margin-top: 0; }
   .menu-toggle[aria-expanded="true"] .menu-icon i:last-child { transform: translateY(-3px) rotate(-45deg); }
   .primary-navigation { position: absolute; top: 50px; right: 0; left: 0; display: none; height: auto; padding: 8px 18px 14px; flex-direction: column; align-items: stretch; gap: 0; border-radius: 14px; background: var(--surface); }
   .primary-navigation.is-open { display: flex; }
-  .primary-navigation a { width: fit-content; min-height: 40px; font-size: 13px; }
+  .primary-navigation a { width: fit-content; height: auto; min-height: 40px; font-size: 13px; }
   .view { width: calc(100% - 28px); min-height: calc(100vh - 100px); margin-top: 16px; }
   .home-view { min-height: 0; padding: 36px 24px 24px; grid-template-columns: 1fr; gap: 12px; }
   .home-view h1 { font-size: clamp(33px, 9.5vw, 48px); }

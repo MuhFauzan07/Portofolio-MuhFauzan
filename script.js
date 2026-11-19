@@ -123,7 +123,7 @@ function renderProject(projectId) {
   const description = project.description ? `<p class="detail-description">${project.description}</p>` : "";
 
   detailContent.innerHTML = `
-    <a class="back-link" href="#projects" aria-label="Kembali ke Projects"><img src="assets/back-arrow.png" alt=""> <span>Projects</span></a>
+    <a class="back-link" href="#projects" aria-label="Kembali ke Projects"><img src="assets/back-arrow.png" alt=""></a>
     <div class="project-detail-layout">
       <div class="detail-copy">
         <p class="detail-category">${project.category}</p>
