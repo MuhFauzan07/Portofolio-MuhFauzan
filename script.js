@@ -79,7 +79,7 @@ const projects = {
   },
   locabeez: {
     title: "LOCABEEZ",
-    category: "Pemantauan UMKM oleh Disperindagkop",
+    category: "Website",
     description: "LOCABEEZ- Aplikasi untuk mendukung pemantauan dan pengelolaan UMKM (Usaha Mikro, Kecil, dan Menengah) untuk Disperindagkop. menyediakan fitur dalam menganalisis kinerja UMKM. Dengan teknologi terkini seperti kecerdasan buatan (AI) dan Large Language Model (LLM), LOCABEEZ memungkinkan pengambilan keputusan yang lebih tepat dan efisien.",
     highlights: ["Super Admin", "Rekomendasi AI", "Ringkasan UMKM", "Learning Module"],
     role: "Frontend Developer",
